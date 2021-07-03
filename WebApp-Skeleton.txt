@@ -1,0 +1,45 @@
+Front End
+-------------------------------------------------------------------------------------------
+1) Create-react-app
+2) App -> react-router-dom (routes changes dynamically/declarative programming) 
+	 --> defined components 
+	 --> created a components folder --> created files for each components -
+	 --> imported them into App.js
+3) Each component 
+      --> import react-router-dom
+      --> Navbar component - get code from bootstrap and alter <a> <link>
+      --> created required states and event handler functions 
+      --> console logged states after each change.
+
+Back End
+-------------------------------------------------------------------------------------------
+4) create a folder called "Backend".
+
+--------
+SERVER
+--------
+5) create Server.js 
+	--> import express, cors, dotenv (loads environment variables from a .env file into process.env)
+	--> write normal server code.
+	--> dotenv.config() 
+	--> app.use(cors())
+6) Create Routes folder 
+	--> create user.js and exercise.js 
+	--> use express.Router and create routes and export the files as middleware
+7) Inside server.js 
+	--> import the middleware are router level middleware.
+---------
+DATABASE
+---------
+
+7) Inside server.js 
+	--> import moongoose
+	--> Mongodb website and create a cluster. 
+	--> click on connection --> click on "connect your application" --> copy the uri
+	--> paste it in ".env" file.
+8) Establish connection.
+9) Create Schema. 
+10) Create Model.
+11) In each component, wherever we console logged the state (Frontend step last point) 
+	--> After that we want to push the console logged data/value to our database.
+	--> using axios (This is how you connect front-end to Back-end)
